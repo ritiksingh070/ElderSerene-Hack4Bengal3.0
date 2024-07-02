@@ -1,0 +1,86 @@
+/* UserProfile.css */
+
+.user-profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    flex: 1 1 200px;
+    max-width: 200px;
+    margin-right: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+    
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  .profile-content {
+    flex: 3;
+    max-width: calc(100% - 220px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-content h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: blue;
+  }
+  
+
+  .profile-content p{
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .user-profile {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .profile-content {
+      max-width: 100%;
+    }
+  }
+  

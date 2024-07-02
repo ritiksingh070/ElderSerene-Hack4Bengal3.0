@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body{
+  background-color: #F6F6F6;
+  background-color: white;
+  background-color: #F0F8FF;
+}
+
+.sticky-icons {
+  position: fixed;
+  left: 30px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.sticky-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #25D366; /* WhatsApp color */
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.sticky-icons a.call-icon {
+  background-color: #34B7F1; /* Call icon color */
+}
+
+.sticky-icons a i {
+  font-size: 24px;
+}
+
+.sticky-icons a:hover {
+  opacity: 0.8;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: slateblue;
+  color: #fff;
+  border: none;
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-top i {
+  font-size: 24px;
+}
+
+.scroll-top:hover {
+  background-color: #333;
+}
+
+
+@media only screen and (max-width:767px){
+  .sticky-icons{
+    left: 20px;
+  }
+}

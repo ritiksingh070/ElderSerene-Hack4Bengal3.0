@@ -1,0 +1,85 @@
+
+.choose-us {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.top p{
+  font-size: 20px;
+  padding: 0 50px 0 50px;
+}
+
+.top h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.top p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.choose-left,
+.choose-right {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.choose-left h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.choose-left p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.description ul {
+  list-style-type:disc;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.description ul li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.description button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.description button:hover {
+  background-color: rgb(7, 68, 68);
+}
+
+.video-description {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}

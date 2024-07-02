@@ -1,0 +1,143 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.about-first {
+  width: 80%;
+  text-align: center;
+  margin: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.about-second {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 20px;
+  border-radius: 8px;
+  gap: 15px;
+}
+
+.about-second-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.about-service {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  margin-top: 15px;
+}
+.about-service img{
+  width: 40px;
+}
+.about-service div {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+.about-service div h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.about-second-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.about-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.aboutMainImage img{
+  
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+ 
+}
+.aboutMainImage div{
+  
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+ 
+}
+.aboutMainImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.our-mission {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  /* border: 2px solid black; */
+  font-weight: 500;
+  color: black;
+}
+.our-mission .mission {
+  flex: 2;
+  padding: 20px;
+  gap: 10px;
+  /* border: 2px solid green; */
+}
+.our-mission h2 {
+  padding: 10px 0;
+  color: gray;
+}
+.our-mission .vision {
+  padding: 20px;
+  /* border: 2px solid green; */
+  flex: 2;
+}
+
+@media (max-width: 768px) {
+  .about-first,
+  .about-second {
+    width: 90%;
+  }
+
+  .about-second {
+    flex-direction: column;
+  }
+
+  .about-second-right {
+    padding-left: 0;
+  }
+
+  .about-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-first,
+  .about-second {
+    width: 95%;
+  }
+
+  .about-title {
+    font-size: 1.2em;
+  }
+}
